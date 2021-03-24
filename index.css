@@ -1,0 +1,342 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:focus{
+    outline-style: none;
+}
+.div1, .div2, body {
+    width: 100%;
+    height: 753px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+body{
+    background-image:url(images/images/bg.jpg);
+}
+.div1{
+    background-image:url(images/banner.jpg);
+}
+
+.div1 .div1-child{
+    width: 100%;
+    height: 100%;
+    padding: 15%;
+    background: black;
+    position: relative;
+    animation-name: back;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes  back {
+    from{
+        background: black;
+    }
+    to{
+        background: rgba(0, 0, 0, 0.336); 
+    }
+}
+.div1 .div1-child h1{
+    text-align: center;
+    color: #fff;
+    font-size: 100px;
+    font-family: 'Lobster', cursive;
+    opacity: .8;
+    
+}
+
+
+ .Arrow{
+    color: #fff;
+    font-size: 35px;
+    opacity: 0;
+    position: absolute;
+    left: 48%;
+    top: 645px;
+    animation-name: click;
+    animation-duration: 1.3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+.Arrow:hover{
+    opacity: .8;
+}
+@keyframes  click {
+    0%{
+        transform: scale(.5);
+    }
+    
+    50%{
+        transform: scale(.8);
+        opacity: 1;
+    }
+    
+    100%{
+        transform: scale(.5);
+    }
+}
+
+
+
+
+
+
+.div2{
+    background-image:url(images/banner2.jpg);
+    padding-top: 10%;
+}
+.div2 .div2-child2{
+    position: relative;
+    background: rgba(0, 0, 0, 0.404);
+    width: 60%;
+    height: 350px;
+    border: 2px solid #fff;
+    margin-left: 20%;
+    text-align: center;
+}
+.div2 .div2-child2 .Arrow{
+    top: 145%;
+}
+.div2 .div2-child2 h1{
+    margin-top: 55px;
+    color: #fff;
+}
+.div2 .div2-child2 span{
+    font-size: 25px;
+    color: #8f8c8c;
+}
+.div2 .div2-child2 p{
+    margin-top: 25px;
+    padding: 0 50px;
+    font-size: 15px;
+    color: #e1e0e0;
+}
+.div2 .div2-child2 .button{
+    margin-top: 25px;
+    padding: 0 50px;
+    font-size: 15px;
+    text-decoration: none;
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    border: 2px solid #9d9b9b;
+    padding: 11px;
+    border-radius: 10px;
+    top: 68%;
+    left: 40%;
+    color: #fff;
+    transition: .5s;
+}
+.div2 .div2-child2 .button:hover{
+    background: rgba(0, 0, 0, 0.473);
+    box-shadow: 0 0 10px #fff ;
+}
+@media (min-width: 1537px) and (max-width: 2560px){
+    .div2 {
+        padding-top: 4%;
+    }
+    .div2 .div2-child2 p{
+        padding: 0 100px;
+        font-size: 20px;
+    }
+    .div2 .div2-child2 .button{
+        left: 45%;
+    }
+    .div2 .div2-child2 .Arrow{
+        top: 165%;
+    }
+}
+@media (max-width: 1025px){
+    .div2 .div2-child2 .Arrow{
+        top: 160%;
+    }
+}
+@media (max-width: 992px){
+    .div2 .div2-child2{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .div2 .div2-child2 .button{
+        top: 74%;
+        left: 39%;
+    }
+    .div2 .div2-child2 .Arrow{
+        top: 180%;
+    }
+}
+@media (max-width: 768px){
+    .div2 .div2-child2 h1{
+        margin-top: 20px;
+    }
+    .div2 .div2-child2 p{
+        margin-top: 15px;
+        padding: 0 10px;
+    }
+    .div2 .div2-child2 .button{
+        top: 71%;
+        left: 35%;
+    }
+    .div2 .div2-child2 .Arrow{
+        top: 165%;
+    }
+}
+@media (max-width: 580px){
+    .div2 .div2-child2 h1{
+        margin-top: 10px;
+    }
+    .div2 .div2-child2 p{
+        margin-top: 5px;
+        padding: 0 5px;
+    }
+    .div2 .div2-child2 .button{
+        left: 32%;
+    }
+    .div2 .div2-child2 .Arrow{
+        top: 175%;
+    }
+}
+@media (max-width: 469px){
+    .div2 .div2-child2 h1{
+        font-size: 25px;
+    }
+    .div2 .div2-child2 p{
+        padding: 0 2px;
+        font-size: 13px;
+    }
+    .div2 .div2-child2 .button{
+        left: 27.5%;
+    }
+}
+@media (max-width: 395px){
+    .div2 .div2-child2 h1{
+        font-size: 24px;
+    }
+    .div2 .div2-child2 .button{
+        left: 22%;
+    }
+}
+
+
+
+.div3{
+    padding: 90px 168px;
+}
+.div3 .div3-main{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 20px;
+    color: #aaa;
+}
+.div3 .div3-main h1{
+    font-size: 70px;
+    color: #fff;
+}
+.div3 .div3-main2 img{
+    width: 100%;
+} 
+.div3-tittle{
+    padding: 40px;
+    text-align: center;
+    color: #ccc;
+}
+.div3-tittle h1{
+    margin-bottom: 15px;
+}
+.div3-tittle p{
+    letter-spacing: 5px;
+}
+.div3-main2 .paragraph{
+    padding: 40px;
+}
+.div3-main2 .paragraph p{
+    line-height: 30px;
+    padding: 50px 50px 0;
+    font-size: 18px;
+    color: #aaa;
+}
+
+
+.div3-main3{
+    background: #222;
+    padding: 80px;
+    height: 815px;
+}
+.div3-main3 .div3-tittle{
+    background: #333;
+    color: #ddd;
+}
+.div3-main3 .img img{
+    float: left;
+    width: 511px;
+}
+
+
+
+.div4-main4{
+    width: 100%;
+}
+.div4-main4 > .div4-main4-child{
+    width: 100%;
+    height: 443px;
+}
+.div4-main4-child > div{
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+.div4-main4-child .child-img img{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.div4-main4-child .child-text{
+    background: #fff;
+    height: 443px;
+    padding: 100px;
+}
+.div4-main4-child .child-text h1{
+    margin-bottom: 25px;
+}
+.div4-main4-child .child-text p{
+    line-height: 25px;
+    color: #777;
+}
+.div4-main4-child .text-black{
+    background: #333;
+    color: #fff;
+    direction: rtl;
+}
+
+.div5-main5{
+    width: 100%;
+}
+.div5-main5 ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 45px 0 20px;
+}
+.div5-main5 ul li{
+    float: left;
+    margin: 20px;
+    font-size: 40px;
+    text-decoration: none;
+}
+.div5-main5 ul li > a{
+    text-decoration: none;
+}
+.div5-main5 ul li > a:hover{
+    color: #999;
+}
+.div5-main5 p,a{
+    text-align: center;
+    color: #ccc;
+    text-shadow: 0 0 20px #ccc;
+}
